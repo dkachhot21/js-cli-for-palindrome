@@ -24,12 +24,15 @@ function is_palindrome(str) {
   }
 }
 //take input from terminal
-const readline = require('readline').createInterface({
+const readline = require("readline").createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
-readline.question('Enter string : ', name => {
-    let test = name;
-    is_palindrome(test);
-    readline.close();
+readline.question("Enter string : ", (name) => {
+  let test = name;
+  is_palindrome(test);
+  readline.close();
 });
+
+console.log(process.argv[2]);
+is_palindrome(process.argv[2]);
