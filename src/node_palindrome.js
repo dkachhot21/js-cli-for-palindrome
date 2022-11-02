@@ -34,5 +34,5 @@ readline.question("Enter string : ", (name) => {
   readline.close();
 });
 
-console.log(process.argv[2]);
-is_palindrome(process.argv[2]);
+// console.log(process.argv[2]);
+// is_palindrome(process.argv[2]);
